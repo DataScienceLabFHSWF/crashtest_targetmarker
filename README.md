@@ -1,6 +1,9 @@
+This repository is the codebase for the scientific paper: Hybrid bayesian convolutional neural network object detection architectures for tracking small markers in automotive crashtest videos
+
+Abstract:
+Automotive crash tests are an important aspect of everyday safety, where accurate measurements and evaluations play a crucial role. In order to automate this process, we implement a bayesian hybrid computer vision model to detect two different kinds of target markers. These are commonly used in crash tests, by e.g. automotive manufacturers, to aid the localisation of the car’s positional data by attaching these markers at different positions to the vehicle. A tracking algorithm is subsequently used to add contextual time information to the marker objects. The extracted information can then be used in downstream tasks to calculate important metrics for the crash test evaluation, e.g. the speed, momentum, acceleration and trajectory at particular parts of the car during different stages of the crash test. The model consists of a pre-trained Faster-RCNN for the region proposals with the addition of a bayesian convolutional neural network to estimate a statistical uncertainty on the model’s classifications. This uncertainty estimation can be used as a tool to improve safety in uncertain edge cases in videos where lighting conditions and light reflections are not optimal. Our pipeline achieves an average recall and precision of 0.89 and 0.99, respectively, when applied to test data. This outperforms the recall of state of the art models like the Faster-RCNN Resnet-152 by more than 28% while delivering slightly better precision, increasing robustness in most of the tested use-cases.
+
+The fulltext can be found under: https://septentrio.uit.no/index.php/nldl/article/view/6802
+
 # crashtest_targetmarker_detection
 ![alt text](https://github.com/DataScienceLabFHSWF/crashtest_targetmarker/blob/main/imgs/collage.jpg?raw=true)
-
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=DataScienceLabFHSWF_crashtest_targetmarker_detection&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=DataScienceLabFHSWF_crashtest_targetmarker_detection)
-
-[![SonarCloud](https://sonarcloud.io/images/project_badges/sonarcloud-white.svg)](https://sonarcloud.io/summary/new_code?id=DataScienceLabFHSWF_crashtest_targetmarker_detection)
